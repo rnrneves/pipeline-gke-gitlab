@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     dockerapp = docker.build("rnrneves/projeto-cicd-dio:${env.BUILD_ID}",
-                    '-f ./app/Dockerfile .')
+                    '-f /app/.')
 
                 }
                 
