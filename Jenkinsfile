@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Source') {
             steps {
-                git url:'https://github.com/rnrneves/pipeline-gke-gitlab.git', branch 'main'
+                git url:'https://github.com/rnrneves/pipeline-gke-gitlab.git', branch: 'main'
             }
         }
     
